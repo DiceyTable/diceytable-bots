@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "generic-smooth-minimal",
+  "name": "Pebble",
+  "category": "Tech",
+  "series": "Genesis Line",
+  "tags": ["white", "minimal", "glossy", "classic", "clean"],
+  "description": [
+    "Pebble is the first shape you think of when someone says robot: a glossy porcelain-white orb split by hairline seams, your face framed in a soft white rim at the front. Dark pill-shaped ears sit at either side, a slim window crowns the top, and a quiet ring glows underneath as it hovers over the table.",
+    "It is the friendly default of the Genesis Line, calm and approachable, the bot you bring to a first game night or a long campaign alike. Every slit and ring shares one light, so a single colour choice changes its whole mood: cool blue for a calm evening, ember for a rivalry, green when you are winning."
+  ],
+  "price": {
+    "coolness": 5,
+    "uniqueness": 4,
+    "complexity": 3,
+    "recommended": 900,
+    "rationale": "The cleanest, simplest design in the set: charming but modest in detail, so it sits at the low end of the bot range."
+  },
+  "source": { "sheet": "generic-1/generic-smooth-minimal.png" },
+  "model": {
+    "glb": "generic-smooth-minimal.glb",
+    "webGlb": "generic-smooth-minimal.web.glb",
+    "thumbnail": "thumbnail.webp",
+    "gallery": ["store-1-front.webp", "store-2-three-quarter.webp", "store-3-side.webp", "store-4-back.webp"],
+    "triangles": 29464,
+    "boundingRadiusFt": 0.457124
+  },
+  "collider": { "shape": "sphere", "radiusFt": 0.4583333333333333, "center": [0, 0, 0] },
+  "screen": {
+    "module": "bot-screen",
+    "sha256": "9810c8fc1961ac0f14a0a4908b74953fa8eff5c9ac8175c1f650d51dc12bff02",
+    "fit": "cover"
+  },
+  "lights": [
+    { "id": "primary", "label": "Glow", "default": "#35c8ff", "intensity": 2.5 }
+  ],
+  "materials": {
+    "Bot_Shell": { "props": { "clearCoat": 0.7, "clearCoatGloss": 0.92 } },
+    "Bot_Accent": { "props": { "clearCoat": 0.35, "clearCoatGloss": 0.85 } },
+    "Bot_Core": { "props": {} },
+    "Bot_Glow_Primary": { "light": "primary", "props": { "diffuse": "#050505" } }
+  },
+  "credits": [
+    {
+      "title": "Pebble bot model",
+      "origin": "own-work",
+      "notes": "Modelled procedurally in Blender 5.2 (build_generic-smooth-minimal.py); the rim reuses the bot-screen bezel profile with a lower crown."
+    },
+    {
+      "title": "Off White Plastic Glossy",
+      "origin": "third-party",
+      "creator": "L Carter",
+      "sourceUrl": "https://www.blenderkit.com/asset-gallery-detail/0e142031-72c0-4113-abd7-e59d8fa4c45f/",
+      "licenseName": "Royalty Free (BlenderKit)",
+      "notes": "Baked roughness map used on the white shell, rim and back hatch (embedded in the GLB)."
+    },
+    {
+      "title": "Black Plastic Glossy",
+      "origin": "third-party",
+      "creator": "L Carter",
+      "sourceUrl": "https://www.blenderkit.com/asset-gallery-detail/d62f4845-174a-42a4-88d4-a3e09d788877/",
+      "licenseName": "Royalty Free (BlenderKit)",
+      "notes": "Baked roughness map used on the dark accents and inner core (embedded in the GLB)."
+    }
+  ]
+}
