@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "id": "vikings-horned-knotwork",
+  "name": "Rune Warden",
+  "category": "Norse",
+  "series": "Forge of Asgard",
+  "tags": [
+    "ivory",
+    "bronze",
+    "knotwork",
+    "runes",
+    "shield",
+    "horns",
+    "norse"
+  ],
+  "description": [
+    "Rune Warden is a Viking shield turned into a hovering machine. Eight ivory armour plates, each engraved with its own knotwork and runes, sit between three riveted bands that cross its body like a gimbal: a brown forged spine over the crown, a strap down through each flank and a dark iron ring around the waist. Plank-built wooden shields on either side carry a carved serpent, and your face sits in a pewter frame at the front.",
+    "It is built like something a smith would be proud of: heavy, symmetrical and a little battle-worn, with eight bronze-edged horns sweeping up and down from riveted iron mounts at its waist and a reactor ring glowing on its back. The runes on its shield hubs, the rings around its crown and underside and the bars beside its face all share one light, so a single colour sets its mood, from glacier blue to forge-fire orange."
+  ],
+  "price": {
+    "coolness": 8,
+    "uniqueness": 7,
+    "complexity": 9,
+    "recommended": 1350,
+    "rationale": "A dense, fully engraved design (eight knotwork plates, plank shields with a carved serpent, three riveted bands and eight horns) with a strong silhouette, though its round body shares the family look of the other orbs."
+  },
+  "source": {
+    "sheet": "vikings-1/vikings-horned-knotwork.png"
+  },
+  "model": {
+    "glb": "vikings-horned-knotwork.glb",
+    "webGlb": "vikings-horned-knotwork.web.glb",
+    "thumbnail": "thumbnail.webp",
+    "gallery": [
+      "store-1-front.webp",
+      "store-2-three-quarter.webp",
+      "store-3-side.webp",
+      "store-4-back.webp"
+    ],
+    "triangles": 84552,
+    "boundingRadiusFt": 0.527072
+  },
+  "collider": {
+    "shape": "sphere",
+    "radiusFt": 0.4583333333333333,
+    "center": [
+      0,
+      0,
+      0
+    ]
+  },
+  "screen": {
+    "module": "bot-screen",
+    "sha256": "9810c8fc1961ac0f14a0a4908b74953fa8eff5c9ac8175c1f650d51dc12bff02",
+    "fit": "cover",
+    "mount": {
+      "position": [
+        0,
+        0,
+        0.337927
+      ],
+      "scale": 0.8
+    }
+  },
+  "lights": [
+    {
+      "id": "primary",
+      "label": "Rune light",
+      "default": "#3aa6ff",
+      "intensity": 2.5
+    }
+  ],
+  "materials": {
+    "Bot_Bronze": {
+      "props": {
+        "useMetalness": true,
+        "metalness": 1
+      }
+    },
+    "Bot_Iron": {
+      "props": {
+        "useMetalness": true,
+        "metalness": 1
+      }
+    },
+    "Bot_Steel": {
+      "props": {
+        "useMetalness": true,
+        "metalness": 1
+      }
+    },
+    "Bot_Ivory": {
+      "props": {
+        "clearCoat": 0.3,
+        "clearCoatGloss": 0.8
+      }
+    },
+    "Bot_Wood": {
+      "props": {
+        "clearCoat": 0.25,
+        "clearCoatGloss": 0.72
+      }
+    },
+    "Bot_Glow_Primary": {
+      "light": "primary",
+      "props": {
+        "diffuse": "#050505"
+      }
+    }
+  },
+  "credits": [
+    {
+      "title": "Rune Warden bot model",
+      "origin": "own-work",
+      "notes": "Modelled procedurally in Blender 5.2 (build_vikings-horned-knotwork.py); the face rim reuses the bot-screen bezel profile with a lower crown. The knotwork, rune and serpent carvings, plank shading, paint wear and glow mask are own work, painted by make_textures_vikings-horned-knotwork.py. The runes are Elder Futhark signs from Noto Sans Runic (Google, SIL Open Font License 1.1), rendered into the textures; the font is not shipped."
+    },
+    {
+      "title": "Antique Bronze Metal",
+      "origin": "third-party",
+      "creator": "KID",
+      "sourceUrl": "https://www.blenderkit.com/asset-gallery-detail/befa6fa2-4400-46dd-8fbf-1ef26f2fac0b/",
+      "licenseName": "Royalty Free (BlenderKit)",
+      "notes": "Base colour (re-tinted to a darker aged bronze), roughness and normal maps (512 px) on every bronze part, embedded in the GLB."
+    },
+    {
+      "title": "White painted scratched metal",
+      "origin": "third-party",
+      "creator": "ydd 3D",
+      "sourceUrl": "https://www.blenderkit.com/asset-gallery-detail/04aa72d5-0bf4-4e4a-88d4-a6be9c423830/",
+      "licenseName": "Royalty Free (BlenderKit)",
+      "notes": "Base colour (re-tinted warm off-white) and roughness under the own-work engraving atlas on every ivory plate and horn inlay, embedded in the GLB."
+    },
+    {
+      "title": "Rusty Dark Metal",
+      "origin": "third-party",
+      "creator": "Sebastian Joseph",
+      "sourceUrl": "https://www.blenderkit.com/asset-gallery-detail/42b16482-a05b-497a-b7cb-373e69c02f3c/",
+      "licenseName": "Royalty Free (BlenderKit)",
+      "notes": "Base colour (re-tinted brown), roughness and normal maps (512 px) on the spine and lateral straps, embedded in the GLB."
+    },
+    {
+      "title": "Polished Walnut Wood",
+      "origin": "third-party",
+      "creator": "Vaishakh Vinod",
+      "sourceUrl": "https://www.blenderkit.com/asset-gallery-detail/46de7336-6072-4b85-8b99-ac2438829a08/",
+      "licenseName": "Royalty Free (BlenderKit)",
+      "notes": "Base colour (re-tinted darker, rotated to run along the planks) and roughness under the own-work plank and serpent carving on both shields, embedded in the GLB."
+    },
+    {
+      "title": "Dark Gunmetal",
+      "origin": "third-party",
+      "creator": "KID",
+      "sourceUrl": "https://www.blenderkit.com/asset-gallery-detail/a0963816-297c-4988-b4f6-92dfaf662efe/",
+      "licenseName": "Royalty Free (BlenderKit)",
+      "notes": "Base colour (re-tinted charcoal), roughness and normal maps (512 px) on the core, the rings and the hubs, embedded in the GLB."
+    },
+    {
+      "title": "Dark Brushed Silver Metal",
+      "origin": "third-party",
+      "creator": "KID",
+      "sourceUrl": "https://www.blenderkit.com/asset-gallery-detail/8b1ca640-26af-4261-bf78-14415d0ed99b/",
+      "licenseName": "Royalty Free (BlenderKit)",
+      "notes": "Base colour (re-tinted pewter), roughness and normal maps (512 px) on the screen frame and the reactor's steel ring, embedded in the GLB."
+    },
+    {
+      "title": "Noto Sans Runic",
+      "origin": "third-party",
+      "creator": "Google (Noto project)",
+      "sourceUrl": "https://fonts.google.com/noto/specimen/Noto+Sans+Runic",
+      "licenseName": "SIL Open Font License 1.1",
+      "notes": "The Elder Futhark runes on the ivory plates, the shield hubs and the rune panels are signs from this font, rendered and thickened into the embedded textures. The font itself is not shipped."
+    }
+  ]
+}
