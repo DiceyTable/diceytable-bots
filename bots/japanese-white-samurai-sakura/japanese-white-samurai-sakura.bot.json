@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "id": "japanese-white-samurai-sakura",
+  "name": "Sakura Sentinel",
+  "category": "Japanese",
+  "series": "Blossom Shogunate",
+  "tags": [
+    "lacquer",
+    "samurai",
+    "kabuto",
+    "blossom",
+    "seigaiha",
+    "brass",
+    "ceremonial",
+    "japanese"
+  ],
+  "description": [
+    "Sakura Sentinel is a samurai kabuto reimagined as a hovering drone. Thick white lacquered plates, layered like sode armour with vermilion-lacquered edges, stand on posts over a dense graphite chassis. Seigaiha waves are engraved into framed panels on its lower and corner plates, and plum branches are painted across its flanks and back. Your face sits in a white lacquer surround beneath a forehead plate carrying a brass plum-blossom crest and two swept maedate blades.",
+    "It carries itself like a ceremonial guard: composed, immaculate and quietly watchful, with a lens-like reactor on its back, a honeycomb hover core underneath and a pair of red silk tassels hanging below its face. One light runs through the whole machine, from the strips beside the screen to the rings around its reactor, crown and underside, so a single colour sets its mood, from dawn cyan to lantern amber."
+  ],
+  "price": {
+    "coolness": 8,
+    "uniqueness": 7,
+    "complexity": 9,
+    "recommended": 1350,
+    "rationale": "A richly detailed build (a modelled kamon and maedate crest, painted blossom plates, engraved seigaiha, a lamellar stack on each flank and a graphite subframe) with a strong kabuto silhouette, though its round body shares the family look of the other orbs."
+  },
+  "source": {
+    "sheet": "japanese-1/japanese-white-samurai-sakura.png"
+  },
+  "model": {
+    "glb": "japanese-white-samurai-sakura.glb",
+    "webGlb": "japanese-white-samurai-sakura.web.glb",
+    "thumbnail": "thumbnail.webp",
+    "gallery": [
+      "store-1-front.webp",
+      "store-2-three-quarter.webp",
+      "store-3-side.webp",
+      "store-4-back.webp"
+    ],
+    "triangles": 85042,
+    "boundingRadiusFt": 0.56048
+  },
+  "collider": {
+    "shape": "sphere",
+    "radiusFt": 0.4583333333333333,
+    "center": [
+      0,
+      0,
+      0
+    ]
+  },
+  "screen": {
+    "module": "bot-screen",
+    "sha256": "9810c8fc1961ac0f14a0a4908b74953fa8eff5c9ac8175c1f650d51dc12bff02",
+    "fit": "cover",
+    "mount": {
+      "position": [
+        0,
+        -0.009843,
+        0.347769
+      ],
+      "scale": 0.78
+    }
+  },
+  "lights": [
+    {
+      "id": "primary",
+      "label": "Energy glow",
+      "default": "#33c6ff",
+      "intensity": 2.5
+    }
+  ],
+  "materials": {
+    "Bot_Lacquer": {
+      "props": {
+        "clearCoat": 0.6,
+        "clearCoatGloss": 0.88
+      }
+    },
+    "Bot_RedLacquer": {
+      "props": {
+        "clearCoat": 0.8,
+        "clearCoatGloss": 0.9
+      }
+    },
+    "Bot_BlackLacquer": {
+      "props": {
+        "clearCoat": 0.9,
+        "clearCoatGloss": 0.93
+      }
+    },
+    "Bot_Brass": {
+      "props": {
+        "useMetalness": true,
+        "metalness": 1
+      }
+    },
+    "Bot_DarkSteel": {
+      "props": {
+        "useMetalness": true,
+        "metalness": 1
+      }
+    },
+    "Bot_Cord": {
+      "props": {
+        "useSheen": true,
+        "sheen": "#b04038",
+        "sheenGloss": 0.3
+      }
+    },
+    "Bot_Glow_Primary": {
+      "light": "primary",
+      "props": {
+        "diffuse": "#050505"
+      }
+    }
+  },
+  "credits": [
+    {
+      "title": "Sakura Sentinel bot model",
+      "origin": "own-work",
+      "notes": "Modelled procedurally in Blender 5.2 (build_japanese-white-samurai-sakura.py); the face rim reuses the bot-screen bezel profile. The per-plate lacquer atlas (seigaiha engraving, hairline seams, edge wear, the painted plum branches) and the honeycomb glow mask are own work, painted by make_textures_japanese-white-samurai-sakura.py."
+    },
+    {
+      "title": "White painted scratched metal",
+      "origin": "third-party",
+      "creator": "ydd 3D",
+      "sourceUrl": "https://www.blenderkit.com/asset-gallery-detail/04aa72d5-0bf4-4e4a-88d4-a6be9c423830/",
+      "licenseName": "Royalty Free (BlenderKit)",
+      "notes": "Base colour (re-tinted warm white) and roughness under the own-work lacquer atlas on every white plate, embedded in the GLB."
+    },
+    {
+      "title": "Antique Bronze Metal",
+      "origin": "third-party",
+      "creator": "KID",
+      "sourceUrl": "https://www.blenderkit.com/asset-gallery-detail/befa6fa2-4400-46dd-8fbf-1ef26f2fac0b/",
+      "licenseName": "Royalty Free (BlenderKit)",
+      "notes": "Base colour (re-tinted champagne brass), roughness and normal maps (512 px) on the crest, the kamon, the rivets and every brass fitting, embedded in the GLB."
+    },
+    {
+      "title": "Dark Gunmetal",
+      "origin": "third-party",
+      "creator": "KID",
+      "sourceUrl": "https://www.blenderkit.com/asset-gallery-detail/a0963816-297c-4988-b4f6-92dfaf662efe/",
+      "licenseName": "Royalty Free (BlenderKit)",
+      "notes": "Base colour (re-tinted graphite), roughness and normal maps (512 px) on the core, the subframe insets, the posts and the hub frames, embedded in the GLB."
+    },
+    {
+      "title": "Dark Brushed Silver Metal",
+      "origin": "third-party",
+      "creator": "KID",
+      "sourceUrl": "https://www.blenderkit.com/asset-gallery-detail/8b1ca640-26af-4261-bf78-14415d0ed99b/",
+      "licenseName": "Royalty Free (BlenderKit)",
+      "notes": "Base colour (re-tinted dark steel), roughness and normal maps (512 px) on the subframe panels, the face shell, the rings and the braces, embedded in the GLB."
+    }
+  ]
+}
